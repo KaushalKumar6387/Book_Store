@@ -83,7 +83,7 @@ function Navbar() {
             </label>
            </div>
             <div>
-              <a className="btn btn-neutral">Login</a>
+              <a className="btn  btn-neutral">Login</a>
             </div>
           </div>
         </div>
