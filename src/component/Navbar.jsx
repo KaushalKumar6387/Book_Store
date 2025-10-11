@@ -117,7 +117,7 @@ function Navbar() {
             </button>
            </div> */}
             <div>
-              <a className="btn  btn-neutral shadow-none px-10 py-3">Login</a>
+              <a className="btn  btn-neutral shadow-none ">Login</a>
             </div>
           </div>
         </div>
