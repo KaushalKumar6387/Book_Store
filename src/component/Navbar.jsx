@@ -4,30 +4,31 @@ import { FaSun, FaMoon } from 'react-icons/fa'; // For icons
 
 
 
-  const [darkMode, faMoon]=useState(false);
-
-  useEffect(()=>{
-
-    const savedTheme=localStorage.getItem('theme');
-    if(savedTheme==='dark')
-    {
-      setDarkMode(true);
-      document.body.classList.add('dark');
-    }
-  },[]);
-
-    const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    if (!darkMode) {
-      document.body.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.body.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }
 
 function Navbar() {
+   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setDarkMode(true);
+      document.body.classList.add("dark");
+    }
+  }, []);
+
+  // Must be inside the component
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.body.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  };
+
+
   const navItem = (
     <>
       <li>
@@ -81,7 +82,8 @@ function Navbar() {
 
             <a className="btn btn-ghost text-xl">
               <img src={logo} alt="" style={{ height: "30px" }} />
-              Bookverse
+              <span className="text-[#00c4ea]">Book<span className="text-[#c30f70]">verse</span></span>
+             
             </a>
           </div>
           <div className="navbar-end">
@@ -109,11 +111,11 @@ function Navbar() {
               <input type="search" className="grow" placeholder="Search" />
             </label>
            </div>
-           <div>
-             <button onClick={toggleDarkMode} className="dark-toggle-btn">
+           {/* <div>
+             <button onClick={toggleDarkMode} className="dark-toggle-btn btn-sm">
               {darkMode ? <FaSun /> : <FaMoon />}
             </button>
-           </div>
+           </div> */}
             <div>
               <a className="btn  btn-neutral shadow-none px-10 py-3">Login</a>
             </div>
