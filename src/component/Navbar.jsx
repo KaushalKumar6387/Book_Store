@@ -1,5 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/book.png";
+import { FaSun, FaMoon } from 'react-icons/fa'; // For icons
+
+
+
+  const [darkMode, faMoon]=useState(false);
+
+  useEffect(()=>{
+
+    const savedTheme=localStorage.getItem('theme');
+    if(savedTheme==='dark')
+    {
+      setDarkMode(true);
+      document.body.classList.add('dark');
+    }
+  },[]);
+
+    const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.body.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }
+
 function Navbar() {
   const navItem = (
     <>
@@ -82,8 +109,13 @@ function Navbar() {
               <input type="search" className="grow" placeholder="Search" />
             </label>
            </div>
+           <div>
+             <button onClick={toggleDarkMode} className="dark-toggle-btn">
+              {darkMode ? <FaSun /> : <FaMoon />}
+            </button>
+           </div>
             <div>
-              <a className="btn  btn-neutral">Login</a>
+              <a className="btn  btn-neutral shadow-none px-10 py-3">Login</a>
             </div>
           </div>
         </div>
