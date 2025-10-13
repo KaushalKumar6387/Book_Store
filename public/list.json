@@ -1,0 +1,56 @@
+[
+    {
+        "id":"1",
+        "name":"Physics class 11",
+        "title":"this is a Physics of class 11",
+        "price":"0",
+        "category":"free",
+        "image":"src/assets/class.png"
+
+    },
+    {
+        "id":"2",
+        "name":"Physics class 12",
+        "title":"this is a Physics of class 12",
+        "price":"249",
+        "category":"paid",
+        "image":"src/assets/class.png"
+
+    },
+    {
+        "id":"3",
+        "name":"Math Class 11",
+        "title":"this is a Math of class 11",
+        "price":"0",
+        "category":"free",
+        "image":"src/assets/class.png"
+
+    },
+    {
+        "id":"4",
+        "name":"Math Class 12",
+        "title":"this is a Math of class 12",
+        "price":"240",
+        "category":"paid",
+        "image":"src/assets/class.png"
+
+    },
+    {
+        "id":"5",
+        "name":"Physics class 10",
+        "title":"this is a Physics of class 10",
+        "price":"0",
+        "category":"free",
+        "image":"src/assets/class.png"
+
+    },
+    {
+        "id":"6",
+        "name":"Hindi class 10",
+        "title":"this is a Hindi of class 11",
+        "price":"0",
+        "category":"free",
+        "image":"src/assets/class.png"
+
+    }
+]
