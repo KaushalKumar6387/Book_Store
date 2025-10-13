@@ -56,8 +56,8 @@ export default function FreeBook() {
         <div className="mt-10">
           <Slider {...settings}>
             {lists.map((data, key)=>(
-            <div index={key} className="md:space-x-1">
-              <div className="card bg-base-100 w-full md:w-100 shadow-sm">
+            <div index={key} className="px-3">
+              <div className="card bg-base-100 w-full  shadow-sm">
                 <figure>
                   <img
                     src={`src/assets/${data.image}`}
