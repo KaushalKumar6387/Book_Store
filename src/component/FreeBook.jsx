@@ -50,29 +50,43 @@ export default function FreeBook() {
             Learn new skills for free with our offered courses. Gain knowledge,
             improve yourself, and grow without any cost.
           </p>
+
+            
         </div>
         <div className="mt-10">
           <Slider {...settings}>
-            {lists.map((data, key) => (
-              <div className="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">
-      Card Title
-      <div className="badge badge-secondary">NEW</div>
-    </h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div className="card-actions justify-end">
-      <div className="badge badge-outline">Fashion</div>
-      <div className="badge badge-outline">Products</div>
-    </div>
-  </div>
-</div>
+            {lists.map((data, key)=>(
+            <div index={key} className="md:space-x-1">
+              <div className="card bg-base-100 w-full md:w-100 shadow-sm">
+                <figure>
+                  <img
+                    src={`src/assets/${data.image}`}
+                    alt={data.name}
+                    // style={{maxHeight:"200px"}}
+                    className="h-50"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">
+                    {data.name}
+                    <div className="badge badge-secondary">{data.category}</div>
+                  </h2>
+                  <p>
+                   {data.title}
+                  </p>
+
+                  <div className="card-actions justify-between">
+                    <div className="badge badge-outline">&#8377;{data.price}</div>
+                    <div className="badge badge-outline cursor-pointer hover:text-secondary px-3 py-3"><a href="">
+                        Buy Now
+                        </a></div>
+                </div>
+                 
+                </div>
+              </div>
+            </div>
             ))}
+
           </Slider>
         </div>
       </div>
