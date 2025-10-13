@@ -65,7 +65,7 @@ return ()=>{
   return (
     <>
       <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 ${
-        sticky?"sticky-navbar shadow-sm bg-base-200/90  duration-300 ease-in-out":""
+        sticky?"sticky-navbar shadow-sm bg-base-200/90  duration-300 ease-in-out z-50":""
       }`}>
         <div className="navbar  ">
           <div className="navbar-start">
