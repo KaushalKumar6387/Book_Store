@@ -5,7 +5,7 @@
         "title":"this is a Physics of class 11",
         "price":"0",
         "category":"free",
-        "image":"src/assets/class.png"
+        "image":"class.jpeg"
 
     },
     {
@@ -14,7 +14,7 @@
         "title":"this is a Physics of class 12",
         "price":"249",
         "category":"paid",
-        "image":"src/assets/class.png"
+        "image":"class.jpeg"
 
     },
     {
@@ -23,7 +23,7 @@
         "title":"this is a Math of class 11",
         "price":"0",
         "category":"free",
-        "image":"src/assets/class.png"
+        "image":"class.jpeg"
 
     },
     {
@@ -32,7 +32,7 @@
         "title":"this is a Math of class 12",
         "price":"240",
         "category":"paid",
-        "image":"src/assets/class.png"
+        "image":"class.jpeg"
 
     },
     {
@@ -41,7 +41,7 @@
         "title":"this is a Physics of class 10",
         "price":"0",
         "category":"free",
-        "image":"src/assets/class.png"
+        "image":"class.jpeg"
 
     },
     {
@@ -50,7 +50,7 @@
         "title":"this is a Hindi of class 11",
         "price":"0",
         "category":"free",
-        "image":"src/assets/class.png"
+        "image":"class.jpeg"
 
     }
 ]
