@@ -8,6 +8,23 @@ import { FaSun, FaMoon } from 'react-icons/fa'; // For icons
 function Navbar() {
    const [darkMode, setDarkMode] = useState(false);
 
+   const [sticky, setSticky]=useState(false)
+useEffect(()=>{
+function handleSticky(){
+  if(window.scrollY>0)
+  {
+    setSticky(true);
+  }else{
+    setSticky(false);
+  }
+}
+
+window.addEventListener('scroll',handleSticky);
+return ()=>{
+  window.removeEventListener('scroll',handleSticky);
+}
+},[]);
+
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
@@ -47,8 +64,10 @@ function Navbar() {
   );
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0">
-        <div className="navbar bg-base-100 ">
+      <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 ${
+        sticky?"sticky-navbar shadow-sm bg-base-200/90  duration-300 ease-in-out":""
+      }`}>
+        <div className="navbar  ">
           <div className="navbar-start">
             <div className="dropdown">
               <div
