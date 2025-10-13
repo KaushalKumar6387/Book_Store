@@ -12,13 +12,13 @@ function App() {
     <>
     <Navbar />
 
-       <Router>
+
       <Routes>
         <Route path="/" element={<Home />} />         {/* Home Page */}
         <Route path="/courses" element={<Courses />} />         {/* Home Page */}
        
       </Routes>
-    </Router>
+
 
     <Footer/>
     </>

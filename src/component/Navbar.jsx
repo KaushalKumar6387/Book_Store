@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/book.png";
 import { FaSun, FaMoon } from 'react-icons/fa'; // For icons
+import { Link } from "react-router-dom";
 
 
 
@@ -49,16 +50,16 @@ return ()=>{
   const navItem = (
     <>
       <li>
-        <a>Home</a>
+        <Link to="/">Home</Link >
       </li>
       <li>
-        <a>Course</a>
+        <Link to="/courses">Course</Link>
       </li>
       <li>
-        <a>About Us</a>
+        <Link to="/about-us">About Us</Link>
       </li>
       <li>
-        <a>Contact Us</a>
+        <Link to="/contact-us">Contact Us</Link>
       </li>
     </>
   );
