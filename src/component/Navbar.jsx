@@ -51,15 +51,19 @@ return ()=>{
     <>
       <li>
         <Link to="/">Home</Link >
+        {/* <a href="">Home</a> */}
       </li>
       <li>
         <Link to="/courses">Course</Link>
+        {/* <a href="">Courses</a> */}
       </li>
       <li>
         <Link to="/about-us">About Us</Link>
+        {/* <a href="">About Us</a> */}
       </li>
       <li>
         <Link to="/contact-us">Contact Us</Link>
+        {/* <a href="">Contact Us</a> */}
       </li>
     </>
   );

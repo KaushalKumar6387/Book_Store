@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import list from "../../public/list.json";
 export default function FreeBook() {
   const lists = list.filter((data) => data.category == "free");
-  console.log(lists);
+  // console.log(lists);
 
   var settings = {
     dots: true,
