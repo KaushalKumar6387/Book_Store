@@ -5,3 +5,8 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
+.active{
+    color: oklch(65% 0.241 354.308);
+   border-bottom: 1px solid oklch(65% 0.241 354.308);
+   border-radius: 0;
+}

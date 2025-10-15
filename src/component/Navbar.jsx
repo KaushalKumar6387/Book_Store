@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/book.png";
 import { FaSun, FaMoon } from 'react-icons/fa'; // For icons
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Login from "./Login";
 
 
 
@@ -50,19 +51,19 @@ return ()=>{
   const navItem = (
     <>
       <li>
-        <Link to="/">Home</Link >
+        <NavLink to="/">Home</NavLink >
         {/* <a href="">Home</a> */}
       </li>
       <li>
-        <Link to="/courses">Course</Link>
+        <NavLink to="/courses">Course</NavLink>
         {/* <a href="">Courses</a> */}
       </li>
       <li>
-        <Link to="/about-us">About Us</Link>
+        <NavLink to="/about-us">About Us</NavLink>
         {/* <a href="">About Us</a> */}
       </li>
       <li>
-        <Link to="/contact-us">Contact Us</Link>
+        <NavLink to="/contact-us">Contact Us</NavLink>
         {/* <a href="">Contact Us</a> */}
       </li>
     </>
@@ -141,7 +142,10 @@ return ()=>{
             </button>
            </div> */}
             <div>
-              <a className="btn  btn-neutral shadow-none ">Login</a>
+              <a className="btn  btn-neutral shadow-none "
+              onClick={()=>document.getElementById('my_modal_3').showModal()}
+              >Login</a>
+              <Login />
             </div>
           </div>
         </div>

@@ -52,5 +52,69 @@
         "category":"free",
         "image":"class.jpeg"
 
-    }
+    },
+     {
+    "id": 7,
+    "name": "Web Development Bootcamp",
+    "title": "Learn HTML, CSS, JavaScript, and React from scratch.",
+    "category":"paid",
+     "price":240,
+    "image":"class.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Python for Beginners",
+    "title": "Start your programming journey with Python basics.",
+    "image":"class.jpeg",
+     "category":"paid",
+     "price":599
+  },
+  {
+    "id": 9,
+    "name": "UI/UX Design Fundamentals",
+    "title": "Master Figma, design thinking, and modern UX practices.",
+    "image":"class.jpeg",
+     "category":"Designing",
+     "price":499
+  },
+  {
+    "id": 10,
+    "name": "Data Science & AI",
+    "title": "Learn data analysis, machine learning, and AI tools.",
+    "image":"class.jpeg",
+     "category":"Learning",
+     "price":899
+  },
+    {
+    "id": 11,
+    "name": "Python for Beginners",
+    "title": "Start your programming journey with Python basics.",
+    "image":"class.jpeg",
+     "category":"paid",
+     "price":599
+  },
+  {
+    "id": 12,
+    "name": "UI/UX Design Fundamentals",
+    "title": "Master Figma, design thinking, and modern UX practices.",
+    "image":"class.jpeg",
+     "category":"Designing",
+     "price":499
+  },
+  {
+    "id": 13,
+    "name": "Data Science",
+    "title": "Learn data analysis, machine learning, and AI tools.",
+    "image":"class.jpeg",
+     "category":"Learning",
+     "price":899
+  },
+  {
+    "id": 13,
+    "name": "AI & Machine Learning",
+    "title": "Learn data analysis, machine learning, and AI tools.",
+    "image":"class.jpeg",
+     "category":"Learning",
+     "price":899
+  }
 ]
