@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import AboutUs from './pages/AboutUs';
 import Courses from './pages/Courses';
 import ContactUs from './pages/ContactUs';
+import SignUp from './component/SignUp';
 function App() {
  
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/courses" element={<Courses />} />   {/* About Page */}
         <Route path="/about-us" element={<AboutUs />} />   
         <Route path="/contact-us" element={<ContactUs />} /> 
+        <Route path='/sign-up' element={<SignUp />} />
       </Routes>
     {/* </Router> */}
     <Footer/>
