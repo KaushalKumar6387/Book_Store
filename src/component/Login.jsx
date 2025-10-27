@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
   return (
@@ -7,10 +8,21 @@ export default function Login() {
   <div className="modal-box">
     <form method="dialog">
      
-      <button type='button' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      <button  className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
     </form>
-    <h3 className="font-bold text-lg">Hello!</h3>
-    <p className="py-4">Press ESC key or click on ✕ button to close</p>
+    <form action="">
+    <h3 className="font-bold text-lg text-secondary">Login Now!</h3>
+      <fieldset className="fieldset">
+          <label className="label">Email</label>
+          <input type="email" className="input w-full" placeholder="Email" />
+          <label className="label">Password</label>
+          <input type="password" className="input w-full" placeholder="Password" />
+          <div><a className="link link-hover">Forgot password?</a></div>
+          <button className="btn btn-secondary mt-4">Login</button>
+          <p >Not Registered ? <Link className='text-primary  text-[15px] link-hover'>Sign Up</Link></p>
+        </fieldset>
+    </form>
+   
   </div>
 </dialog>
    </>
